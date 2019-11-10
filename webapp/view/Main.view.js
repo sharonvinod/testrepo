@@ -13,17 +13,9 @@ sap.ui.jsview("tom.view.Main", {
 	 * @memberOf tom.view.Main
 	 */
 	createContent: function (oController) {
-		var oPage = new sap.m.Page({
-			title: "Title",
-			id: "page",
-			content: []
+		var oBtn = new sap.m.Button("idBtn",{
+			text: "Click Me"
 		});
-
-		var app = new sap.m.App(this.createId("app"), {
-			initialPage: "oPage"
-		});
-		app.addPage(oPage);
-		return app;
-	}
-
+		return oBtn;
+}
 });
